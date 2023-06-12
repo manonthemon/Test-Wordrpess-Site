@@ -1,0 +1,13 @@
+# Exclude WordPress core files
+wp-admin/
+wp-includes/
+
+# Exclude plugin directories if desired
+wp-content/plugins/
+
+# Exclude cache and temporary files
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+
+# Exclude any other files or directories you don't want to push
