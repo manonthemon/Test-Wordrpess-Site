@@ -2,6 +2,6 @@
 <html>
         <head>
             <meta charset = "utf-8">
-            <title>My Test Wordpress Page</title>
+            <title>My Test Theme</title>
 </head>
 <body>

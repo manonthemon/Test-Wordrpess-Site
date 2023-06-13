@@ -1,1 +1,1 @@
-<h1>This is my test site index</h1>
+<h1>This is my test theme index</h1>
