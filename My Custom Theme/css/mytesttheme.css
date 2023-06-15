@@ -1,11 +1,20 @@
 html,
 body {
     margin: 0;
-    color: #333;
-    background: #eee;
+    color: #eb0101;
+    background: #4f28d2;
     font: sans-serif;
 }
 
 body {
-    padding: 20px;
+    padding: 90px;
+}
+
+footer {
+    background-color: #eb0101;
+    color: aquamarine;
+}
+
+p {
+    color: #eb0101;
 }

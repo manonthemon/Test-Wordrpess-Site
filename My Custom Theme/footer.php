@@ -3,7 +3,9 @@
 <footer> 
     <p>This is my footer </p> 
 
-    </footer>
+    
 
+    </footer>
+    <?php wp_footer(); ?>
     </body>
 </html>
