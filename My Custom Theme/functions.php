@@ -15,3 +15,7 @@ register_nav_menu('secondary', 'Footer Navigation');
 }
 
 add_action('init', 'myTestTheme_theme_setup');
+
+add_theme_support('custom-background');
+
+add_theme_support('custom-header');
