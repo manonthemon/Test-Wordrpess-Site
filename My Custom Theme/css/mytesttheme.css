@@ -1,8 +1,8 @@
 html,
 body {
     margin: 0;
-    color: #eb0101;
-    background: #4f28d2;
+    color: #000000;
+    background: #ffffff;
     font: sans-serif;
 }
 
@@ -11,10 +11,10 @@ body {
 }
 
 footer {
-    background-color: #eb0101;
-    color: aquamarine;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 p {
-    color: #eb0101;
+    color: #000000;
 }
