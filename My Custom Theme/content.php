@@ -11,7 +11,7 @@
 <?php if (has_post_thumbnail()):?>
 
             <div class="col-xs-12 col-sm-4">
-            <div class="thumbnail"><?php the_post_thumbnail('thumbnail') ?></div>
+            <div class="thumbnail"><?php the_post_thumbnail('medium') ?></div>
 </div>
 <div class="col-xs-12 col-sm-8">
 <?php the_content(); ?>
