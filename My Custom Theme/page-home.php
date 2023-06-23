@@ -39,7 +39,14 @@
 		endif;
 
 //PRINT OTHER 2 POSTS, NOT THE FIRSt ONE
-$lastBlog = new WP_Query('type=post&posts_per_page=2&offset=1');
+$args = array(
+
+    'type' => 'post',
+    'posts_per_page' => 2,
+    'offset' => 1,
+
+);
+$lastBlog = new WP_Query($args);
 
 if( $lastBlog->have_posts() ):
         
