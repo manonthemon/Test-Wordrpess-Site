@@ -2,17 +2,26 @@
 
 <div class="row">
 
-<div class="col-xs-12">
-
 <?php 
 
-    $lastBlog = new WP_Query('type=post&posts_per_page=1');
+$args = array (
+    'type' => 'post',
+    'posts_per_page' => 3,
+    'category__in' => array(11, 12, 13)
+
+);
+
+    $lastBlog = new WP_Query($args);
 
     if( $lastBlog->have_posts() ):
 			
         while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+
+        <div class="col-xs-12 col-sm-4">
             
-            <?php get_template_part('content',get_post_format()); ?>
+            <?php get_template_part('content','featured'); ?>
+
+    </div>
         
         <?php endwhile;
         
@@ -23,6 +32,8 @@
 ?>
 
 </div>
+
+<div class="row">
 	
 	<div class="col-xs-12 col-sm-8">
 
@@ -39,7 +50,7 @@
 		endif;
 
 //PRINT OTHER 2 POSTS, NOT THE FIRSt ONE
-$args = array(
+/* $args = array(
 
     'type' => 'post',
     'posts_per_page' => 2,
@@ -59,16 +70,18 @@ if( $lastBlog->have_posts() ):
 endif;
 
 wp_reset_postdata();
+
+*/
 		
 		?>
 
-<hr>
+<!-- <hr> -->
 
 <?php
 
 //PRINT ONLY TUTORIALS
 
-$lastBlog = new WP_Query('type=post&posts_per_page=-1&category_name=news');
+/* $lastBlog = new WP_Query('type=post&posts_per_page=-1&category_name=news');
 
 if( $lastBlog->have_posts() ):
         
@@ -81,6 +94,8 @@ if( $lastBlog->have_posts() ):
 endif;
 
 wp_reset_postdata();
+
+*/
 
 ?>
 	
