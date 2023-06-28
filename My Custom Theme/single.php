@@ -34,7 +34,7 @@
 						}
 						
 					 ?>
-				
+				 
 				</article>
 
 			<?php endwhile;
