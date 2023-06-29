@@ -7,6 +7,10 @@
 		<div class="row text-center">
 
 		<?php 
+
+		$currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ;
+		$args = array('posts_per_page' => 3, 'paged' => $currentPage );
+		query_posts($args);
 		
 		if( have_posts() ): $i = 0;
 			
@@ -41,6 +45,7 @@
 </div>
 
 			<?php  endif;
+			wp_reset_query();
 				
 		?>
 		</div>
