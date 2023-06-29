@@ -31,9 +31,16 @@
 						</div>
 					</div>
 			
-			<?php $i++; endwhile;
-			
-		endif;
+			<?php $i++; endwhile; ?>
+
+<div class="col-xs-6 text-left">
+<?php next_posts_link('<< Older Posts')?>
+</div>
+<div class="col-xs-6 text-right">
+<?php previous_posts_link('Newer Posts >> ')?>
+</div>
+
+			<?php  endif;
 				
 		?>
 		</div>
